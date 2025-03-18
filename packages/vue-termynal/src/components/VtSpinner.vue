@@ -18,6 +18,7 @@ const props = defineProps({
   frameDelay: { type: Number, default: null, required: false },
   duration: { type: Number, default: null, required: false },
   prefix: { type: String, default: null, required: false },
+  suffix: { type: String, default: null, required: false },
 })
 
 const line = ref<HTMLElement | null>(null)
@@ -42,10 +43,12 @@ const show = async () => {
     }
 
     const nextFrame = i % frames.length
-    line.value.textContent = frames[nextFrame]
+    line.value.textContent = `${frames[nextFrame]}${props.suffix ? ` ${props.suffix}` : ''}`
   }
 
   await wait(lineDelay)
+
+  line.value.textContent = `✅${props.suffix ? ` ${props.suffix}` : ''}`
 }
 
 onMounted(() => registerShowFn(show))

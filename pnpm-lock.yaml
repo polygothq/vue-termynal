@@ -23,7 +23,7 @@ importers:
       '@lehoczky/eslint-config-vue':
         specifier: ^2.0.4
         version: 2.0.4(eslint@9.16.0(jiti@1.21.6))(typescript@5.6.3)
-      '@lehoczky/vue-termynal':
+      '@polygot/vue-termynal':
         specifier: workspace:*
         version: link:../vue-termynal
       eslint:
@@ -48,7 +48,7 @@ importers:
       '@lehoczky/eslint-config-vue':
         specifier: ^2.0.4
         version: 2.0.4(eslint@9.16.0(jiti@1.21.6))(typescript@5.6.3)
-      '@lehoczky/vue-termynal':
+      '@polygot/vue-termynal':
         specifier: workspace:*
         version: link:../vue-termynal
       eslint:

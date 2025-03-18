@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  "@lehoczky/vue-termynal":
+  "@polygothq/vue-termynal":
     specifier: link:../
     version: link:..
   vue:

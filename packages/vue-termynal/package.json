@@ -1,5 +1,5 @@
 {
-  "name": "@lehoczky/vue-termynal",
+  "name": "@polygot/vue-termynal",
   "description": "Vue.js implementation of the termynal library.",
   "version": "1.3.0",
   "private": false,
@@ -9,7 +9,8 @@
     "lint": "eslint --max-warnings=0",
     "lint:fix": "eslint --max-warnings=0 --fix",
     "build": "vite build",
-    "publint": "publint"
+    "publint": "publint",
+    "publish": "npm publish --access public"
   },
   "files": [
     "dist",
